@@ -7,6 +7,8 @@
 
 #include <iostream>
 
+using namespace std;
+
 /**
  * @brief Calculates the factorial of a number.
  *
@@ -34,15 +36,15 @@ unsigned long long factorial(int n) {
 int main() {
     int number;
 
-    std::cout << "Enter a non-negative integer: ";
-    std::cin >> number;
+    cout << "Enter a non-negative integer: ";
+    cin >> number;
 
     if (number < 0) {
-        std::cerr << "Error: Factorial is not defined for negative integers.\n";
+        cerr << "Error: Factorial is not defined for negative integers.\n";
         return 1;
     }
 
-    std::cout << "Factorial of " << number << " is " << factorial(number) << "\n";
+    cout << "Factorial of " << number << " is " << factorial(number) << "\n";
 
     return 0;
 }
