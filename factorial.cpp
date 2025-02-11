@@ -36,15 +36,15 @@ unsigned long long factorial(int n) {
 int main() {
     int number;
 
-    cout << "Enter a non-negative integer: ";
+    cout << "Enter a non-negative integer: " << endl;
     cin >> number;
 
     if (number < 0) {
-        cerr << "Error: Factorial is not defined for negative integers.\n";
+        cerr << "Error: Factorial is not defined for negative integers." << endl;
         return 1;
     }
 
-    cout << "Factorial of " << number << " is " << factorial(number) << "\n";
+    cout << "Factorial of " << number << " is " << factorial(number) << endl;
 
     return 0;
 }
